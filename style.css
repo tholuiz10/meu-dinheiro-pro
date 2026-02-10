@@ -1198,45 +1198,36 @@ input, select, textarea {
 ========================= */
 @media (max-width: 820px) {
 
+  .layout{
+    padding: 12px;
+    gap: 12px;
+  }
+
+  /* sidebar vira bottom bar */
   .sidebar{
     position: fixed;
     left: 12px;
     right: 12px;
     bottom: 12px;
+    top: auto;
 
-    height: 74px;
-    padding: 10px;
+    width: auto;
+    height: 72px;
 
-    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    gap: 12px;
 
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
+    padding: 10px 12px;
+    gap: 10px;
 
     border-radius: 22px;
-    background: rgba(255,255,255,0.7);
-    backdrop-filter: blur(14px);
+    background: rgba(255,255,255,0.65);
+    backdrop-filter: blur(12px);
 
-    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
-    z-index: 100;
-
-    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+    z-index: 50;
   }
-
-  /* remove barra feia do scroll */
-  .sidebar::-webkit-scrollbar{
-    display: none;
-  }
-
-  .nav-btn{
-    flex: 0 0 auto; /* impede esmagar */
-    width: 52px;
-    height: 52px;
-    border-radius: 16px;
-  }
-}
 
   /* esconde logo/texto no mobile */
   .sidebar .logo{
@@ -1335,6 +1326,6 @@ input, select, textarea {
     width: 100%;
     justify-content: center;
   }
-
+}
 .nav-btn:active { transform: scale(0.96); }
 button:active { transform: scale(0.98); }
