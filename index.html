@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Dinheiro PRO</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="layout">
+
+ <aside class="sidebar">
+    
+    <button onclick="navigate('dashboard')" class="nav-btn" title="Home">
+  <span class="icon">🏠</span>
+  <span class="label">Home</span>
+</button>
+
+<button onclick="navigate('ganhos')" class="nav-btn" title="Ganhos">
+  <span class="icon">💰</span>
+  <span class="label">Ganhos</span>
+</button>
+
+    <button onclick="navigate('meses')" class="nav-btn" title="Meses">
+        <span class="icon">📅</span>
+        <span class="label">Meses</span>
+    </button>
+
+    <button onclick="navigate('cartao')" class="nav-btn" title="Cartões">
+        <span class="icon">💳</span>
+        <span class="label">Cartões</span>
+    </button>
+
+    <button onclick="navigate('assistente')" class="nav-btn" title="Assistente">
+  <span class="icon">🤖</span>
+  <span class="label">Assistente</span>
+</button>
+
+    <button onclick="navigate('anual')" class="nav-btn" title="Anual">
+        <span class="icon">📊</span>
+        <span class="label">Anual</span>
+    </button>
+
+    <button onclick="navigate('dividas')" class="nav-btn" title="Dívidas">
+        <span class="icon">💰</span>
+        <span class="label">Dívidas</span>
+    </button>
+
+    <button onclick="navigate('metas')" class="nav-btn" title="Metas">
+        <span class="icon">🎯</span>
+        <span class="label">Metas</span>
+    </button>
+    <button onclick="navigate('fixos')" class="nav-btn" title="Fixos">
+        <span class="icon">📌</span>
+        <span class="label">Fixos</span>
+     </button>
+     <button onclick="navigate('categorias')" class="nav-btn" title="Categorias">
+        <span class="icon">🏷️</span>
+        <span class="label">Categorias</span>
+     </button>
+
+      <button onclick="alternarTema()" class="nav-btn" title="Tema">
+    <span class="icon">🌤</span>
+    <span class="label">Tema</span>
+   </button>
+
+</aside>
+
+
+    <main id="content"></main>
+
+</div>
+
+<script src="app.js"></script>
+<script src="components/dashboard.js"></script>
+<script src="components/cartao.js"></script>
+<script src="components/dividas.js"></script>
+<script src="components/metas.js"></script>
+<script src="components/anual.js"></script>
+<script src="components/meses.js"></script>
+<script src="components/fixos.js"></script>
+<script src="components/categorias.js"></script>
+<script src="components/ganhos.js"></script>
+<script src="components/assistente.js"></script>
+
+</body>
+</html>
